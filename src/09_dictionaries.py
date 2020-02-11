@@ -38,7 +38,7 @@ waypoints = [
 
 waypoints.append({
     "lat": 40,
-    "log": -120,
+    "lon": -120,
     "name": "a fourth place"
 })
 
@@ -49,11 +49,18 @@ waypoints.append({
 
 # YOUR CODE HERE
 
-next(location for location in waypoints if location["name"] == "a place")["lon"] = -130
-next(location for location in waypoints if location["name"] == "a place")["name"] = "not a real place"
+for i in waypoints:
+    if i['name'] == "a place":
+        i["lon"] = -130
+        i['name'] = "not a real place"
 
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
 
-print(list(location for location in waypoints))
+# print('{location['name']}, {location['lon']}, location['lat']' for location in waypoints)
+
+for location in waypoints:
+    print(location['name'], location['lat'], location['lon'])
+
+    

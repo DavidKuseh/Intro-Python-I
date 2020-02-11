@@ -27,6 +27,7 @@ print(x)
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
 
+# USE INSERT INSTEAD OF POP
 x.pop(5)
 x.extend([99,10])
 print(x)
