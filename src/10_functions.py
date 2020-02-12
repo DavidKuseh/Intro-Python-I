@@ -14,8 +14,7 @@ num = int(num)
 
 # YOUR CODE HERE
 
-def is_even_or_odd(num):
-    if num % 2 == 0 and num !=0:
-        return ("Even!")
-    elif (num % 2) == 1:
-        return ("Odd")
+if is_even(num):
+    print("Even!")
+else:
+    print("Odd")

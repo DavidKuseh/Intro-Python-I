@@ -27,9 +27,7 @@ print(x)
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
 
-# USE INSERT INSTEAD OF POP
-x.pop(5)
-x.extend([99,10])
+x.insert(5,99)
 print(x)
 
 # Print the length of list x
@@ -40,5 +38,4 @@ print(x.__len__())
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
 
-multiply = [num * 1000 for num in x]
-print(multiply)
+print([num * 1000 for num in x])

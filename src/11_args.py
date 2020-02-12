@@ -17,9 +17,12 @@ print(f1(1, 2))
 
 # YOUR CODE HERE
 
+# def f2(*args):
+#         return sum(int(i) for i in args)
+#         print(sum())
+
 def f2(*args):
-        return sum(int(i) for i in args)
-        print(sum())
+    return sum(args)
 
 print(f2(1))                    # Should print 1
 print(f2(1, 3))                 # Should print 4
@@ -55,11 +58,9 @@ print(f3(8))     # Should print 9
 
 # YOUR CODE HERE
 
-def f4(**data):
-    for key, value in data.items():
-        print("key: {}, value: {}".format(key,value))
-        if value == str:
-            print('key: {}, value: "{}"'.format(key,value))
+def f4(**kwargs):
+    for attr in kwargs:
+        print(f'key: {attr}, value: {kwargs[attr]}')
 
 
 # Should print
